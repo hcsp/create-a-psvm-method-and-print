@@ -1,3 +1,7 @@
 package com.github.hcsp;
 
-public class Main {}
+public class Main {
+    // Create a public static void main(String[] args) method here and print "Hello" to standard
+    // error (System.out)
+    // 在这里创建一个public static void main(String[] args)方法，在标准输出（System.out）打印"Hello"
+}

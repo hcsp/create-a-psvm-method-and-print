@@ -1,19 +1,15 @@
 package com.github.hcsp;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.hamcrest.Matchers.containsStringIgnoringCase;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import com.github.blindpirate.extensions.CaptureSystemOutput;
 import org.junit.jupiter.api.Test;
 
 public class MainTest {
     @Test
-    public void importStringUtilsCorrectly() {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(baos, true));
-
+    @CaptureSystemOutput
+    public void importStringUtilsCorrectly(CaptureSystemOutput.OutputCapture capture) {
+        capture.expect(containsStringIgnoringCase("hello"));
         Main.main(null);
-
-        assertTrue(new String(baos.toByteArray()).toLowerCase().contains("hello"));
     }
 }

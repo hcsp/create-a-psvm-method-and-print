@@ -5,6 +5,7 @@ public class Main {
     // and print "Hello" to standard error (System.out)
     // 在这里创建一个public static void main(String[] args)方法，在标准输出（System.out）打印"Hello"
     public static void main(String[] args) {
-        System.out.println('Hello');
+        System.out.println("Hello");
+        // System.out.print(System.getProperty("file.encoding"));
     }
 }

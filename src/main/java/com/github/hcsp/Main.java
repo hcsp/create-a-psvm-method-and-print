@@ -1,7 +1,5 @@
 package com.github.hcsp;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 public class Main {
     // Create a public static void main(String[] args) method here
     // and print "Hello" to standard output (System.out)
